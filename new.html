@@ -1,4 +1,10 @@
 
+<script>
+  function redirectToLatest() {
+      window.location.href = 'latest.html';
+  }
+  redirectToLatest();
+</script>
 
 <html lang="en">
 
@@ -37,19 +43,7 @@
   <meta http-equiv="Content-Language" content="en-US" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1149096991373354"
     crossorigin="anonymous" type="43f92c5823e95dd824ade679-text/javascript"></script>
-    <script>
-      function checkAndRedirect() {
-          const url = new URL(window.location.href);
-          const params = url.searchParams;
 
-          if (!params.has('v')) {
-              window.location.href = 'new.html?v=1';
-          }
-      }
-
-      // Call the function when the script loads
-      checkAndRedirect();
-  </script>
   <style>
     html {
       height: 100%
