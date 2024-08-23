@@ -732,6 +732,20 @@
 
       });
     }
+    function hideAds() {
+    // Your code to hide ads
+    console.log("Ads hidden.");
+}
+
+  function checkIfIframe() {
+      if (window.self !== window.top) {
+          hideAds();
+      }
+  }
+
+  // Run the check when the page loads
+  window.onload = checkIfIframe;
+
 
 
   </script>
