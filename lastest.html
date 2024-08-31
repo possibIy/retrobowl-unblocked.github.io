@@ -33,8 +33,7 @@
     content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" />
   <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true,IE=Edge,chrome=1" />
   <meta http-equiv="Content-Language" content="en-US" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1149096991373354"
-    crossorigin="anonymous" type="43f92c5823e95dd824ade679-text/javascript"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3720612299124178" crossorigin="anonymous"></script>
 
   <style>
     html {
@@ -448,7 +447,9 @@
       cursor: pointer;
       font-size: 10px;
     }
-
+    #footer-menu{
+      line-height: 3px;
+    }
     #footer-menu a {
       position: relative;
       display: inline-block;
@@ -571,9 +572,7 @@
 
 
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3720612299124178"
-     crossorigin="anonymous"></script>
-<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNV0GPHRDL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -594,10 +593,10 @@
     </iframe>
     <div id="ads">
 
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1149096991373354"
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3720612299124178"
         crossorigin="anonymous"></script>
       <!-- Retro bowl -->
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1149096991373354" data-ad-slot="7087911626"
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3720612299124178" data-ad-slot="1948946535"
         data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
@@ -614,6 +613,17 @@
           <span class="tooltip">Play the game in fullscreen mode</span>
 
         </a>
+
+        <a href="/">Home
+          <span class="tooltip">Return Home</span>
+
+        </a>
+
+        <a href="https://retrobowlcollege.co" target="_blank">Retro Bowl College
+          <span class="tooltip">Play Retro Bowl College</span>
+
+        </a>
+
       </div>
 
 
@@ -679,7 +689,7 @@
     function showAFG() {
       var show_ads = (typeof adBreak !== 'undefined') ? true : false;
 
-      var domain = 'retrobowl.me';
+      var domain = 'retrobowl.info';
       if (window != window.top && document.referrer != null) {
         url = document.referrer;
         ref = url.match(/:\/\/(.[^/]+)/)[1];
@@ -733,7 +743,17 @@
     }
 
 
+    function checkIfIframe() {
+      if (window.self !== window.top) {
+        hideAds();
+      }
+    }
+
+    // Run the check when the page loads
+    window.onload = checkIfIframe;
+
   </script>
+
   <script async defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.1/dist/lazyload.min.js"
     type="43f92c5823e95dd824ade679-text/javascript"></script>
   <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
