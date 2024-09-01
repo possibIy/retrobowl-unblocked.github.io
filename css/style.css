@@ -25,6 +25,3 @@ body,html{font-family:var(--ltn__body-font)}#content[tabindex="-1"]:focus,*,a,a:
     margin-top: 1.4rem;
 }
 
-.section-title{
-    color: white !important;
-}
