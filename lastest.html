@@ -34,84 +34,75 @@
 <meta content="en-US" http-equiv="Content-Language"/>
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3720612299124178"></script>
 <style>
-    html {
-      height: 100%
-    }
+  html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+background-color: #0e0e0e;
+}
 
-    #ads a {
-      text-decoration: none;
-      color: green;
-      border: 2px solid;
-      border-radius: 10px;
-      padding: 7px;
-    }
+.game-container {
+width: 100%;
+height: 100%;
+}
 
-    #ads a:hover {
-      color: rgb(4, 187, 4);
-      border: 2px solid;
-    }
+#container {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+width: 100%;
+height: 100%;
+min-height: 100%;
+overflow: hidden;
+}
 
-    body {
-      background-color: black;
-      color: yellow;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      height: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+#frame {
+border: none;
+width: 100%;
+height: 100vh;
+}
 
-    }
+#ads {
+width: 330px;
+height: 100%;
+text-align: center;
+}
 
+@media only screen and (max-width: 768px) {
+#container {
+  flex-direction: column;
+}
 
-    #container {
-      display: flex;
-      justify-content: space-between;
+#frame {
+  height: 100%;
+}
 
+#ads {
+  width: 100%;
+}
+}
 
-      width: 100%;
-      height: 100%;
-      min-height: 100%;
-      overflow: hidden;
-    }
+@media only screen and (max-width: 400px) {
+#ads {
+  width: 100%;
+  margin: 0 auto;
+}
+}
 
-    #frame {
-      border: none;
-      width: 100%;
-      overflow: hidden;
-    }
+#footer-menu a {
+text-decoration: none;
+color: green;
+border: 2px solid;
+border-radius: 10px;
+padding: 7px;
+}
 
-    .submenu a {
-      font-size: 0.8rem !important;
-    }
+#footer-menu a:hover {
+color: rgb(4, 187, 4);
+}
 
-    #menu1 li a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-    }
-
-    #ads {
-      width: 330px;
-      height: 100%;
-      text-align: center;
-
-    }
-
-    @media only screen and (max-width: 400px) {
-      #container {
-        flex-direction: column;
-      }
-
-      #frame {
-        height: 100% !important;
-      }
-
-      #ads {
-        width: auto !important;
-      }
-    }
-  </style>
+</style>
 <style>
     * {
       padding: 0;
